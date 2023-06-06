@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Hotell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/hotellrum.jpg" alt="hotellrum">
+
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Start</a>
+        <a href="boka.html" class="active">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="info.html">Info</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <section>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efternamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tnr">Telefon</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="tnr" name="firstname" placeholder="Ditt telefonummer..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="lastname" placeholder="Din email..">
+                        </div>
+                    </div>
+                    <div class="col-25">
+                        <label for="country">Rum</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="" disabled selected>Välj</option>
+                            <option value="australia">Singel</option>
+                            <option value="canada">Dubbel</option>
+                            <option value="usa">VIP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Övrigt</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Övrig information.."
+                            style="height:220px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <aside>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore libero, maxime ipsam asperiores
+            dolorum corporis reiciendis cupiditate dolorem, quidem ad id consequatur esse eius sint soluta
+            exercitationem, magnam voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam omnis
+            ipsa magnam facere, voluptates, consequuntur ratione laborum voluptate vitae beatae quibusdam. Asperiores
+            iusto magnam molestias excepturi, aspernatur voluptatibus fuga praesentium! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda quisquam, explicabo nobis consequatur dolor voluptates reiciendis
+            sint voluptatibus est rem fugiat quae autem adipisci veritatis nulla iure quo illo fugit</li>
+    </aside>
+    <footer>
+        <p>Hotell Bright // Storgatan 1 // 123 45 Storstad // 012 - 12 34 56</p>
+    </footer>
+    <script src="script-nav.js"></script>
+
+</body>
+
+</html>
